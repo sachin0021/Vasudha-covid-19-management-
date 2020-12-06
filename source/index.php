@@ -238,9 +238,12 @@ echo $string;
                     <!-- Content -->
                     <h6 class="text-uppercase font-weight-bold text-white">Vasudha</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
-                    <p>Please do not believe any entity using Apna Bank logos & branding to request the public for
-                        money
-                        in exchange for opening a Customer Service Point.</p>
+                    <p>Clean your hands often
+                        Cough or sneeze in your bent elbow - not your hands!
+                        Avoid touching your eyes, nose and mouth
+                        Limit social gatherings and time spent in crowded places
+                        Avoid close contact with someone who is sick.
+                    </p>
 
                 </div>
                 <!-- Grid column -->
