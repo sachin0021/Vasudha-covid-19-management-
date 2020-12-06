@@ -2,7 +2,7 @@
 
 $_SESSION['action'] = '';
 $string             = '<li class="nav-item">
-    <a class="nav-link js-scroll" id="login" href="login.php">Login</a>
+    <a class="nav-link js-scroll" id="login" href="#">Login</a>
   </li>';
 // $string='<li class="nav-item><a class="nav-link js-scroll " id="login" href="login.php">Login</a></li>';
 $string1 = '<a href="newAccount.php" class="btn btn-outline-warning btn-lg " role="button" aria-pressed="true">Create New Account</a>';
@@ -86,16 +86,16 @@ if (array_key_exists("login", $_SESSION) and $_SESSION["login"]) {
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="index.php">Home</a>
+            <a class="nav-link js-scroll active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="aboutus.php">About</a>
+            <a class="nav-link js-scroll" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
+            <a class="nav-link js-scroll" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="profile.php">Profile</a>
+            <a class="nav-link js-scroll" href="#">Profile</a>
           </li>
 
           <?php
