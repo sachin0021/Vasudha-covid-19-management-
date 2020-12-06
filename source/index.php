@@ -164,7 +164,7 @@ echo $string;
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <a href="https://nostalgic-mccarthy-b79a95.netlify.app/"> <div class="service-ico">
+              <a href="nostalgic-mccarthy-b79a95.netlify.app"> <div class="service-ico">
                 <span class="ico-circle"><i class="ion-stats-bars"></i></span>
               </div></a>
               <div class="service-content">
