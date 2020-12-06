@@ -144,7 +144,7 @@ echo $string;
         <div class="row">
           <div class="col-md-4">
             <div class="service-box">
-             <a href="transaction.php"> <div class="service-ico">
+             <a href="#"> <div class="service-ico">
                 <span class="ico-circle"><i class="ion-medkit"></i></span>
               </div></a>
               <div class="service-content">
@@ -154,7 +154,7 @@ echo $string;
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <a href="balance.php"><div class="service-ico">
+              <a href="#"><div class="service-ico">
                 <span class="ico-circle"><i class="ion-ios-heart"></i></span>
               </div></a>
               <div class="service-content">
@@ -164,7 +164,7 @@ echo $string;
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <a href="transactionsummary.php"> <div class="service-ico">
+              <a href="https://nostalgic-mccarthy-b79a95.netlify.app/"> <div class="service-ico">
                 <span class="ico-circle"><i class="ion-stats-bars"></i></span>
               </div></a>
               <div class="service-content">
