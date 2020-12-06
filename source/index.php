@@ -75,7 +75,7 @@ if (array_key_exists("login", $_SESSION) and $_SESSION["login"]) {
     <div class="container">
       <a class="navbar-brand" href="index.php" id="nm">
         <img src="images/icon1.png" width="38" height="38" class="d-inline-block align-top" alt="" loading="lazy">
-        Vashudha
+        Vasudha
     </a>
       <!-- <a class="navbar-brand js-scroll" href="#page-top">APNA BANK</a> -->
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
