@@ -1,34 +1,18 @@
 <?php
-
+session_start();
 $_SESSION['action'] = '';
 $string             = '<li class="nav-item">
-    <a class="nav-link js-scroll" id="login" href="#">Login</a>
-  </li>';
-// $string='<li class="nav-item><a class="nav-link js-scroll " id="login" href="login.php">Login</a></li>';
-$string1 = '<a href="newAccount.php" class="btn btn-outline-warning btn-lg " role="button" aria-pressed="true">Create New Account</a>';
-$string2 = '<a href="#" data-toggle="modal" data-target="#exampleModal" class="block main-div-1">';
-$string3 = '<a href="#" class="block main-div-2" data-toggle="modal" data-target="#exampleModal">';
-$string4 = '<a href="#" class="block main-div-3" data-toggle="modal" data-target="#exampleModal">';
-$string5 = '<a href="#" class="block main-div-5" data-toggle="modal" data-target="#exampleModal">';
-$string6 = '<a href="#" class="block main-div-4" data-toggle="modal" data-target="#exampleModal">';
+    <a class="nav-link js-scroll" id="login" href="login.php">Login</a>
+  </li>
+  <li class="nav-item">
+            <a class="nav-link js-scroll" href="signup.php">Signup</a>
+          </li>';
 
-$for_animation = '<script src="apps.js"></script>';
-if (array_key_exists("login", $_SESSION) and $_SESSION["login"]) {
+if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
     $string = '<li class="nav-item">
       <a class="nav-link js-scroll" id="logout" href="login.php?logout=1">Logout</a>
     </li>';
-    // $string='<li><a id="logout" href="login.php?logout=1">Logout</a></li>';
-    $string1       = '<a href="feedback.php" class="btn btn-outline-warning btn-lg " role="button" aria-pressed="true">Raise a Complaint</a>';
-    $for_animation = '';
 
-    $string2 = '<a href="profile.php" class="block main-div-1">';
-    $string3 = '<a href="balance.php" class="block main-div-2">';
-    $string4 = '<a href="#" class="block main-div-3">';
-    $string5 = '<a href="transaction.php" class="block main-div-5">';
-    $string6 = '<a href="tootherbank.php" class="block main-div-4">';
-    $str     = '<li class="nav-item">
-        <a class="nav-link js-scroll" href="feedback.php">feedback</a>
-      </li>';
 }
 
 ?>
@@ -41,13 +25,13 @@ if (array_key_exists("login", $_SESSION) and $_SESSION["login"]) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Vasudha</title>
+  <title>home</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="icon" type="image/png" href="images/icon1.png">
 
   <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
@@ -88,24 +72,18 @@ if (array_key_exists("login", $_SESSION) and $_SESSION["login"]) {
             <a class="nav-link js-scroll active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#">About</a>
+            <a class="nav-link js-scroll" href="about.php>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#">Services</a>
+            <a class="nav-link js-scroll" href="Plasma.php">Plasma</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#">Profile</a>
+            <a class="nav-link js-scroll" href="#">Service</a>
           </li>
-
-          <?php
-if (!empty($str)) {
-    echo $str;
-}
-
-?>
           <?php
 echo $string;
 ?>
+
         </ul>
       </div>
     </div>
@@ -143,7 +121,7 @@ echo $string;
         <div class="row">
           <div class="col-md-4">
             <div class="service-box">
-             <a href="#"> <div class="service-ico">
+             <a href="hospital.php"> <div class="service-ico">
                 <span class="ico-circle"><i class="ion-medkit"></i></span>
               </div></a>
               <div class="service-content">
