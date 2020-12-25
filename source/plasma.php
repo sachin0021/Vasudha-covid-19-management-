@@ -249,7 +249,7 @@ echo $string1;
                             </div>
                             <div class="col-12 col-sm-6">
                                 <input type="email" id="email" class="form-control"
-                                    placeholder="Enter Your Email (optional)" name="email"
+                                    placeholder="Enter Your Email" name="email"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                             </div>
                         </div>
