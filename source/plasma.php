@@ -250,7 +250,7 @@ echo $string1;
                             <div class="col-12 col-sm-6">
                                 <input type="email" id="email" class="form-control"
                                     placeholder="Enter Your Email" name="email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                             </div>
                         </div>
                         <div class="form-row mb-3">
@@ -340,7 +340,7 @@ echo $string1;
                             <div class="col-12 col-sm-6">
                                 <input type="email" id="email" class="form-control"
                                     placeholder="Enter Your Email" name="email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                             </div>
                         </div>
                         <!-- <div class="form-row mb-3">
