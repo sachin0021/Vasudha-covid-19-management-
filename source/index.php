@@ -131,11 +131,11 @@ echo $string;
           </div>
           <div class="col-md-4">
             <div class="service-box">
-              <a href="#"><div class="service-ico">
+              <a href="centers.php"><div class="service-ico">
                 <span class="ico-circle"><i class="ion-ios-heart"></i></span>
               </div></a>
               <div class="service-content">
-                <h2 class="s-title">Doctors</h2>
+                <h2 class="s-title">COVID Centers</h2>
               </div>
             </div>
           </div>

@@ -33,7 +33,7 @@ if (array_key_exists('search', $_POST)) {
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hospital</title>
+    <title>Centers</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -104,7 +104,7 @@ if (array_key_exists('search', $_POST)) {
         <form method="post">
             <div class="form-row justify-content-center mb-3">
                 <div class="form-header bg-dark">
-                    <h2>Search Hospitals Nearby</h2>
+                    <h2>COVID Centers Nearby</h2>
                 </div>
             </div>
             <div class="form-row justify-content-center">
