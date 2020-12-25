@@ -142,10 +142,10 @@ if (array_key_exists('recipientButton', $_POST)) {
                         <a class="nav-link js-scroll" href="#"></a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#">Login</a>
+                        <a class="nav-link js-scroll" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#">SignUp</a>
+                        <a class="nav-link js-scroll" href="signup.php">SignUp</a>
                     </li>
 
                     <!-- <li class="nav-item">
