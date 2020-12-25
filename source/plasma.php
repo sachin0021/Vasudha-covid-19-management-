@@ -16,7 +16,7 @@ if (array_key_exists('donerButton', $_POST)) {
         // $string1 = '<div class="alert alert-success" role="alert">
         //     Thank you!! Your form has been submitted successfully.
         //   </div>';
-        header('location : index.php');
+        header("location : index.php");
     }
 
 }
@@ -28,7 +28,7 @@ if (array_key_exists('recipientButton', $_POST)) {
     // $hospital = $_POST['hospital'];
     $query = "INSERT into precipient values('$name','$phone','$address','','1')";
     if ($result = mysqli_query($link, $query)) {
-        header('location : index.php');
+        header("location : index.php");
     }
 
 }
