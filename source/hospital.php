@@ -1,31 +1,27 @@
-<?php 
-   $link=mysqli_connect("remotemysql.com","k8xMzRVEWp","u9qS7WCp0z","k8xMzRVEWp");
-   if(mysqli_connect_error())
-   {
-       die ('database connection error');
-   }
-   $string1='';
-   $count=0;
-   $areaname='';
-   if(array_key_exists('search',$_POST))
-   {
-       $areaname=$_POST['areaname'];
-       $query="SELECT * from hospital where '$areaname'=areaname";
-       $result=mysqli_query($link,$query);
-       while($row=mysqli_fetch_array($result))
-       {
-            $count=$count+1;
-            $string1=$string1.'<tr>
-           <th scope="row">'.$count.'</th>
-           <td>'.$row["hos_name"].'</td>
-           <td>'.$row["number_of_patients"].'</td>
-           <td>'.$row["total_no_of_beds"].'</td>
-           <td>'.$row["beds_avialable"].'</td>
+<?php
+$link = mysqli_connect("remotemysql.com", "k8xMzRVEWp", "u9qS7WCp0z", "k8xMzRVEWp");
+if (mysqli_connect_error()) {
+    die('database connection error');
+}
+$string1  = '';
+$count    = 0;
+$areaname = '';
+if (array_key_exists('search', $_POST)) {
+    $areaname = $_POST['areaname'];
+    $query    = "SELECT * from hospital where '$areaname'=areaname";
+    $result   = mysqli_query($link, $query);
+    while ($row = mysqli_fetch_array($result)) {
+        $count   = $count + 1;
+        $string1 = $string1 . '<tr>
+           <th scope="row">' . $count . '</th>
+           <td>' . $row["hos_name"] . '</td>
+           <td>' . $row["number_of_patients"] . '</td>
+           <td>' . $row["total_no_of_beds"] . '</td>
+           <td>' . $row["beds_avialable"] . '</td>
          </tr>';
-       }
-      
-        
-   }
+    }
+
+}
 
 ?>
 
@@ -94,7 +90,7 @@
                     <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="about.php">ABOUT</a>
+                    <a class="nav-link active" href="about.php">STATUS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="plasma.php">PLASMA</a>
@@ -117,7 +113,7 @@
                 </div>
                 <div class="col-12 col-sm-5">
                     <input type="text" name="areaname" class="form-control" placeholder="Enter your Area Name"
-                        value="<?php echo $_POST['areaname'];?>">
+                        value="<?php echo $_POST['areaname']; ?>">
                 </div>
                 <div class="col-12 col-sm-3">
                     <button class="btn btn-outline-success" name="search">Search</button>

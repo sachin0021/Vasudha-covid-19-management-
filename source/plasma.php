@@ -135,9 +135,9 @@ if (array_key_exists('recipientButton', $_POST)) {
                     <li class="nav-item">
                         <a class="nav-link js-scroll active" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
+                   <!--  <li class="nav-item">
                         <a class="nav-link js-scroll" href="about.php">About</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="https://nostalgic-mccarthy-b79a95.netlify.app/">Status</a>
                     </li>

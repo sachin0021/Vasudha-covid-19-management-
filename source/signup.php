@@ -122,7 +122,7 @@ if (array_key_exists("submit", $_POST)) {
                     <a class="nav-link active" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="about.php">ABOUT</a>
+                    <a class="nav-link active" href="about.php">STATUS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="plasma.php">PLASMA</a>

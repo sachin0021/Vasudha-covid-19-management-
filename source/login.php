@@ -93,11 +93,11 @@ if (array_key_exists('submit', $_POST)) {
                             Home
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link js-scroll" href="about.php">
                             About
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="plasma.php">
                             plasma
