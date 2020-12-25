@@ -75,7 +75,7 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
             <a class="nav-link js-scroll" href="about.php>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="Plasma.php">Plasma</a>
+            <a class="nav-link js-scroll" href="plasma.php">Plasma</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#">Service</a>

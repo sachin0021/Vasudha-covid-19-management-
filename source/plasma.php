@@ -133,7 +133,7 @@ if (array_key_exists('recipientButton', $_POST)) {
             <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll active" href="home.php">Home</a>
+                        <a class="nav-link js-scroll active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="about.php">About</a>
@@ -142,7 +142,10 @@ if (array_key_exists('recipientButton', $_POST)) {
                         <a class="nav-link js-scroll" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#">Logout</a>
+                        <a class="nav-link js-scroll" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#">SignUp</a>
                     </li>
 
                     <!-- <li class="nav-item">
