@@ -8,8 +8,9 @@ if (array_key_exists('donerButton', $_POST)) {
     $name     = $_POST['name'];
     $phone    = $_POST['phone'];
     $address  = $_POST['address'];
+    $hosid    = $_POST['hosid'];
     $hospital = $_POST['hospital'];
-    $query    = "INSERT into pdoner values('$name','$phone','$address','$hospital')";
+    $query    = "INSERT into pdoner values('$name','$phone','$address','$hospital','$hosid')";
     if ($result = mysqli_query($link, $query)) {
         $string1 = '<div class="alert alert-success" role="alert">
             Thank you!! Your form has been submitted successfully.
@@ -21,8 +22,9 @@ if (array_key_exists('recipientButton', $_POST)) {
     $name     = $_POST['name'];
     $phone    = $_POST['phone'];
     $address  = $_POST['address'];
+    $hosid    = $_POST['hosid'];
     $hospital = $_POST['hospital'];
-    $query    = "INSERT into precipient values('$name','$phone','$address','$hospital')";
+    $query    = "INSERT into precipient values('$name','$phone','$address','$hospital','$hosid')";
     if ($result = mysqli_query($link, $query)) {
         $string1 = '<div class="alert alert-success" role="alert">
             Thank you!! Your form has been submitted successfully.
@@ -249,6 +251,15 @@ echo $string1;
                                 <input type="email" id="email" class="form-control"
                                     placeholder="Enter Your Email (optional)" name="email"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                            </div>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="col-12 offset-sm-2 col-sm-2">
+                                <label for="hospital">Hospital id</label>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" id="hosid" class="form-control"
+                                    placeholder="Hospital id (required)" name="hosid" />
                             </div>
                         </div>
                         <div class="form-row mb-3">
