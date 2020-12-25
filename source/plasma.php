@@ -19,12 +19,12 @@ if (array_key_exists('donerButton', $_POST)) {
 
 }
 if (array_key_exists('recipientButton', $_POST)) {
-    $name     = $_POST['name'];
-    $phone    = $_POST['phone'];
-    $address  = $_POST['address'];
-    $hosid    = $_POST['hosid'];
-    $hospital = $_POST['hospital'];
-    $query    = "INSERT into precipient values('$name','$phone','$address','$hospital','$hosid')";
+    $name    = $_POST['name'];
+    $phone   = $_POST['phone'];
+    $address = $_POST['address'];
+    // $hosid    = $_POST['hosid'];
+    // $hospital = $_POST['hospital'];
+    $query = "INSERT into precipient values('$name','$phone','$address','','')";
     if ($result = mysqli_query($link, $query)) {
         $string1 = '<div class="alert alert-success" role="alert">
             Thank you!! Your form has been submitted successfully.
@@ -343,7 +343,7 @@ echo $string1;
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                             </div>
                         </div>
-                        <div class="form-row mb-3">
+                        <!-- <div class="form-row mb-3">
                             <div class="col-12 offset-sm-2 col-sm-2">
                                 <label for="hospital">Hospital Name</label>
                             </div>
@@ -351,7 +351,7 @@ echo $string1;
                                 <input type="text" id="hospital" class="form-control"
                                     placeholder="Enter your nearest hospital name" name="hospital" />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-row mb-3">
                             <div class="col-12 offset-sm-2 col-sm-2">
                                 <label for="address">Address</label>
