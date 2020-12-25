@@ -119,7 +119,7 @@ if (array_key_exists('recipientButton', $_POST)) {
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="home.php" id="nm">
-                <img src="images/logo1.png" width="38" height="38" class="d-inline-block align-top" alt=""
+                <img src="images/icon1.png" width="38" height="38" class="d-inline-block align-top" alt=""
                     loading="lazy">
                 Vasudha
             </a>
