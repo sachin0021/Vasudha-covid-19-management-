@@ -24,7 +24,7 @@ if (array_key_exists('recipientButton', $_POST)) {
     $address = $_POST['address'];
     // $hosid    = $_POST['hosid'];
     // $hospital = $_POST['hospital'];
-    $query = "INSERT into precipient values('$name','$phone','$address','','')";
+    $query = "INSERT into precipient values('$name','$phone','$address','','1')";
     if ($result = mysqli_query($link, $query)) {
         $string1 = '<div class="alert alert-success" role="alert">
             Thank you!! Your form has been submitted successfully.
@@ -250,7 +250,7 @@ echo $string1;
                             <div class="col-12 col-sm-6">
                                 <input type="email" id="email" class="form-control"
                                     placeholder="Enter Your Email (optional)" name="email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                             </div>
                         </div>
                         <div class="form-row mb-3">
@@ -259,7 +259,7 @@ echo $string1;
                             </div>
                             <div class="col-12 col-sm-6">
                                 <input type="text" id="hosid" class="form-control"
-                                    placeholder="Hospital id (required)" name="hosid" />
+                                    placeholder="Hospital id" name="hosid" required />
                             </div>
                         </div>
                         <div class="form-row mb-3">
@@ -339,8 +339,8 @@ echo $string1;
                             </div>
                             <div class="col-12 col-sm-6">
                                 <input type="email" id="email" class="form-control"
-                                    placeholder="Enter Your Email (optional)" name="email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                                    placeholder="Enter Your Email" name="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                             </div>
                         </div>
                         <!-- <div class="form-row mb-3">
