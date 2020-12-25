@@ -1,4 +1,5 @@
 <?php
+
 $link = mysqli_connect("remotemysql.com", "k8xMzRVEWp", "u9qS7WCp0z", "k8xMzRVEWp");
 if (mysqli_connect_error()) {
     die('database connection error');
@@ -12,9 +13,10 @@ if (array_key_exists('donerButton', $_POST)) {
     $hospital = $_POST['hospital'];
     $query    = "INSERT into pdoner values('$name','$phone','$address','$hospital','$hosid')";
     if ($result = mysqli_query($link, $query)) {
-        $string1 = '<div class="alert alert-success" role="alert">
-            Thank you!! Your form has been submitted successfully.
-          </div>';
+        // $string1 = '<div class="alert alert-success" role="alert">
+        //     Thank you!! Your form has been submitted successfully.
+        //   </div>';
+        header('location : index.php');
     }
 
 }
@@ -26,9 +28,7 @@ if (array_key_exists('recipientButton', $_POST)) {
     // $hospital = $_POST['hospital'];
     $query = "INSERT into precipient values('$name','$phone','$address','','1')";
     if ($result = mysqli_query($link, $query)) {
-        $string1 = '<div class="alert alert-success" role="alert">
-            Thank you!! Your form has been submitted successfully.
-        </div>';
+        header('location : index.php');
     }
 
 }
@@ -162,9 +162,9 @@ if (!empty($str)) {
 }
 
 ?>
-                    <?php
+                   <!--  <?php
 echo $string;
-?>
+?> -->
                 </ul>
             </div>
         </div>

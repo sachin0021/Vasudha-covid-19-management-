@@ -51,7 +51,7 @@ if (array_key_exists("submit", $_POST)) {
         if (mysqli_query($link, $sql)) {
 
             $string = '<div class="alert alert-success" role="alert">
-                            Signed in !</div>';
+                            Signed in Successfully!</div>';
         }
     } else {
         $string = '<div class="alert alert-danger" role="alert">
