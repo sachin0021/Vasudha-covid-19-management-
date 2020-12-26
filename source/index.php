@@ -96,7 +96,7 @@ echo $string;
     </div>
   </nav>
 
-   <div id="loginmodal" class="modal fade" role="dialog">
+    <div id="loginmodal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -169,7 +169,7 @@ echo $string;
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
 
   <!-- ======= Intro Section ======= -->
   <div id="home" class="intro route bg-image" style="background-image: url(images/pic1.jpg)">
