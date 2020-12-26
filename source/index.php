@@ -84,17 +84,17 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
           <?php
 echo $string;
 ?>
-        <span class="nav-item">
-              <a role="button" id="adminbutton">
-                <!-- <span class="fa fa-sign-in"></span> -->Admin
-              </a>
-        </span>
+        <li class="nav-item">
+            <a class="nav-link js-scroll" role="button" id="logininbutton">
+              Admin
+            </a>
+        </li>
       </ul>
       </div>
     </div>
   </nav>
 
-   <div id="adminmodal" class="modal fade" role="dialog">
+   <div id="loginmodal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
