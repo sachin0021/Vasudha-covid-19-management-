@@ -85,9 +85,11 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
 echo $string;
 ?>
         <li class="nav-item">
+          <span>
             <a class="nav-link js-scroll" role="button" id="logininbutton">
               Admin
             </a>
+          </span>
         </li>
       </ul>
       </div>
