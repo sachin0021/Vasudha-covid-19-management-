@@ -113,14 +113,27 @@ echo $string;
                         <form>
                             <div class="form-row mb-3">
                                 <div class="col-12 col-sm-2 offset-sm-2">
-                                    <label for="emailid">Email Id</label>
+                                    <label for="emailid">Admin Id</label>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control"
-                                        id="emailid"
-                                        placeholder="Enter email id"
+                                        id="adminid"
+                                        placeholder="Enter admin id"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <div class="col-12 col-sm-2 offset-sm-2">
+                                    <label for="emailid">Name</label>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="adminname"
+                                        placeholder="Enter your name"
                                     />
                                 </div>
                             </div>
