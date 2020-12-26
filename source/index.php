@@ -84,12 +84,12 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
           <?php
 echo $string;
 ?>
-        </ul>
         <span class="navbar-text">
               <a role="button" id="loginbutton">
                 <span class="fa fa-sign-in"></span>Admin
               </a>
         </span>
+      </ul>
       </div>
     </div>
   </nav>
