@@ -84,13 +84,13 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
           <?php
 echo $string;
 ?>
-        <li class="nav-item">
-          <span>
+        <!-- <li class="nav-item"> -->
+          <span class="nav-item">
             <a class="nav-link js-scroll" role="button" id="logininbutton">
               Admin
             </a>
           </span>
-        </li>
+        <!-- </li> -->
       </ul>
       </div>
     </div>
