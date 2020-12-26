@@ -72,8 +72,9 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
             <a class="nav-link js-scroll active" href="#">Home</a>
           </li>
           <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="about.php>">About</a>
+            <a class="nav-link js-scroll" href="about.php>">Admin</a>
           </li> -->
+
           <li class="nav-item">
             <a class="nav-link js-scroll" href="plasma.php">Plasma</a>
           </li>
@@ -83,11 +84,90 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
           <?php
 echo $string;
 ?>
-
         </ul>
+        <span class="navbar-text">
+              <a role="button" id="loginbutton">
+                <span class="fa fa-sign-in"></span>Admin
+              </a>
+        </span>
       </div>
     </div>
   </nav>
+
+   <div id="adminmodal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                        >
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row mb-3">
+                                <div class="col-12 col-sm-2 offset-sm-2">
+                                    <label for="emailid">Email Id</label>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="emailid"
+                                        placeholder="Enter email id"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <div class="col-12 col-sm-2 offset-sm-2">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="Enter password"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row mb-2">
+                                <div class="form-check offset-sm-4">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="exapmlecheckbox"
+                                    />
+                                    <label
+                                        for="examplecheckbox"
+                                        class="form-check-label"
+                                        >Remember me</label
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row mb-2">
+                                <div class="col col-sm offset-sm-4">
+                                    <button
+                                        class="btn btn-secondary col-sm-3 mb-1"
+                                        data-dismiss="modal"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button class="btn btn-primary col-sm-3">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
   <!-- ======= Intro Section ======= -->
   <div id="home" class="intro route bg-image" style="background-image: url(images/pic1.jpg)">

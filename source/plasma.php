@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $link = mysqli_connect("remotemysql.com", "k8xMzRVEWp", "u9qS7WCp0z", "k8xMzRVEWp");
 if (mysqli_connect_error()) {
     die('database connection error');
@@ -17,7 +16,6 @@ if (array_key_exists('donerButton', $_POST)) {
         // $string1 = '<div class="alert alert-success" role="alert">
         //     Thank you!! Your form has been submitted successfully.
         //   </div>';
-        sessiosn_destroy();
         header("location : index.php");
     }
 
@@ -30,7 +28,6 @@ if (array_key_exists('recipientButton', $_POST)) {
     // $hospital = $_POST['hospital'];
     $query = "INSERT into precipient values('$name','$phone','$address','','1')";
     if ($result = mysqli_query($link, $query)) {
-        sessiosn_destroy();
         header("location : index.php");
     }
 
