@@ -100,7 +100,7 @@ echo $string;
             <div class="modal-dialog modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Login</h4>
+                        <h4 class="modal-title">Admin Login</h4>
                         <button
                             type="button"
                             class="close"
