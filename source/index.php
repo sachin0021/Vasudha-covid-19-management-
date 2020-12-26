@@ -84,9 +84,9 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
           <?php
 echo $string;
 ?>
-        <span class="navbar-text">
-              <a role="button" id="loginbutton">
-                <span class="fa fa-sign-in"></span>Admin
+        <span class="nav-item">
+              <a role="button" id="adminbutton">
+                <!-- <span class="fa fa-sign-in"></span> -->Admin
               </a>
         </span>
       </ul>
