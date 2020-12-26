@@ -15,6 +15,25 @@ if (array_key_exists("email", $_SESSION) and $_SESSION["email"]) {
 
 }
 
+$error = '';
+if (array_key_exists('submitmodal', $_POST)) {
+    if ($error == '') {
+        $id       = $_POST["adminid"];
+        $password = $_POST["adminpassword"];
+        $query    = "SELECT password FROM admin WHERE '$id'=id";
+        $result   = mysqli_query($link, $query);
+        $row      = mysqli_fetch_array($result);
+
+        if ($row[0] != $_POST['adminpassword']) {
+            $error = '<div class="alert alert-danger" role="alert">
+            Invalid Email / Password !</div>';
+        } else {
+            $_SESSION['email'] = $_POST['email'];
+            header("location:admin.php");
+        }
+    }
+}
+
 ?>
 
 
@@ -110,7 +129,7 @@ echo $string;
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form method="post">
                             <div class="form-row mb-3">
                                 <div class="col-12 col-sm-2 offset-sm-2">
                                     <label for="emailid">Admin Id</label>
@@ -119,7 +138,7 @@ echo $string;
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="adminid"
+                                        id="adminid" name="adminid"
                                         placeholder="Enter admin id"
                                     />
                                 </div>
@@ -145,7 +164,7 @@ echo $string;
                                     <input
                                         type="password"
                                         class="form-control"
-                                        id="password"
+                                        id="adminpassword" nmae="adminpassword"
                                         placeholder="Enter password"
                                     />
                                 </div>
@@ -173,9 +192,12 @@ echo $string;
                                     >
                                         Cancel
                                     </button>
-                                    <button class="btn btn-primary col-sm-3">
+                                    <button class="btn btn-primary col-sm-3" id="submitmodal">
                                         Submit
                                     </button>
+                                    <div>
+                                      <?php echo "<br>$error" ?>
+                                    </div>
                                 </div>
                             </div>
                         </form>
