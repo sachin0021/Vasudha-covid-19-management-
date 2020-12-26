@@ -86,7 +86,7 @@ echo $string;
 ?>
         <!-- <li class="nav-item"> -->
           <span class="nav-item">
-            <a class="nav-link js-scroll" role="button" id="loginbutton">
+            <a class="nav-link js-scroll" role="button" id="adminbutton">
               Admin
             </a>
           </span>
@@ -96,7 +96,7 @@ echo $string;
     </div>
   </nav>
 
-    <div id="loginmodal" class="modal fade" role="dialog">
+    <div id="adminmodal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -366,6 +366,12 @@ echo $string;
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <script>
+    $("#adminbutton").click(function() {
+        $("#adminmodal").modal("show");
+    });
+    </script>
 
   <!-- Template Main JS File -->
   <script src="main.js"></script>
