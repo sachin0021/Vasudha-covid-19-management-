@@ -86,7 +86,7 @@ echo $string;
 ?>
         <!-- <li class="nav-item"> -->
           <span class="nav-item">
-            <a class="nav-link js-scroll" role="button" id="logininbutton">
+            <a class="nav-link js-scroll" role="button" id="loginbutton">
               Admin
             </a>
           </span>
